@@ -1,0 +1,965 @@
+* 
+/* Header */
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.header {
+    width: 100%;
+    height: 55px;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: auto;
+    z-index: 1;
+
+}
+
+.logo {
+    width: 85px;
+    height: 55px;
+    margin-left: 150px;
+    float: left;
+}
+
+.list1 {
+    float: right;
+    margin-right: 170px;
+    padding-top: 18px;
+
+}
+
+.list1 li {
+    list-style: none;
+    text-transform: capitalize;
+    display: inline-block;
+    margin-left: 30px;
+    text-align: center;
+
+
+
+}
+
+.list1 li a {
+    text-decoration: none;
+
+
+}
+
+.list1 li i {
+    color: blue;
+}
+
+.list1 li .line1 {
+    width: 30px;
+    height: 3px;
+
+    margin: 0 auto;
+    margin-top: 3px;
+}
+
+.list1 li:hover .line1 {
+    background-color: blue;
+}
+/* ////////////////////////////////////////////////////////// */
+/* welcome */
+
+.welcome {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-image: url(../images/shifaaz-shamoon-Rl9l9mL6Pvs-unsplash.jpg);
+    background-size: cover;
+    margin-bottom: 80px;
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.contact {
+    width: 800px;
+    height: 260px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+
+}
+
+.tittle {
+    padding-top: 10px;
+    font-size: 65px;
+    text-transform: capitalize;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    word-spacing: 2px;
+}
+
+
+.welcome p {
+    padding-top: 20px;
+    text-transform: capitalize;
+    font-size: 20px;
+    word-spacing: 2px;
+}
+
+.welcome button {
+    margin-top: 30px;
+    height: 55px;
+    width: 135px;
+    text-transform: capitalize;
+    border-radius: 7px;
+    border: none;
+    font-size: 20px;
+}
+
+.btn2 {
+    margin-left: 15px;
+    background-color: blue;
+    color: white;
+}
+
+button:hover {
+    opacity: 0.7;
+}
+
+/* ///////////////////////////////////////////////////////////////////////////////////// */
+/* welcome to website */
+.welcome-to-website {
+    height: 90vh;
+
+}
+
+.welcome-to-website h2 {
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 35px;
+}
+
+.welcome-to-website .underline {
+    width: 55px;
+    height: 5px;
+    background-color: blue;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 125px;
+}
+
+.container {
+    width: 70%;
+    margin: auto;
+}
+
+.welcome-to-website h3 {
+    font-size: 25px;
+}
+
+.center {
+    margin: 0px 5%;
+}
+
+.box {
+    float: left;
+    width: 30%;
+    height: 250px;
+    border: 2px solid blue;
+    text-align: center;
+    padding-top: 40px;
+    text-transform: capitalize;
+    border-radius: 30px;
+    position: relative;
+}
+
+.box i {
+    font-size: 30px;
+    margin-bottom: 5px;
+    color: blue;
+}
+
+.box p {
+    padding-top: 10px;
+}
+
+.plast {
+    padding-top: 20px;
+    color: blue;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+
+.box::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color: black;
+    opacity: 0;
+    transition: 1s;
+    visibility: 0;
+    border-radius: 30px;
+
+}
+
+.box:hover::after {
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    z-index: -1;
+    visibility: 1;
+}
+
+.box:hover {
+    color: antiquewhite;
+    transition: 1s;
+
+}
+
+.box p {
+    color: gray;
+    padding-bottom: 20px;
+}
+
+/* ////////////////////////////////////////////////// */
+/* Hotel */
+.Hotel {
+    height: 200vh;
+    background-color: rgb(188, 182, 182);
+}
+
+.Hotel h2 {
+    padding-top: 100px;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 35px;
+}
+
+.Hotel .underline {
+    width: 55px;
+    height: 5px;
+    background-color: blue;
+    margin: auto;
+    margin-bottom: 125px;
+    margin-top: 8px;
+
+}
+
+.Hotel-item {
+    float: left;
+    width: 30%;
+    padding: 15px 15px;
+    text-align: center;
+    margin-top: 5%;
+    position: relative;
+}
+
+
+
+.Hotel-item img {
+    width: 96%;
+    margin: auto;
+    height: 360px;
+}
+
+.Hotel-item .Hotel-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    transition: 1s;
+
+}
+
+.Hotel-item .Hotel-overlay:hover {
+    opacity: 1;
+}
+
+.Hotel-overlay .overlay-content {
+    width: 60%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+
+}
+
+.overlay-content p {
+    color: white;
+    padding-bottom: 10px;
+    transition: 0.5s;
+    opacity: 0;
+
+}
+
+.Hotel-overlay:hover p {
+    opacity: 1;
+}
+
+.overlay-content h3 {
+    color: white;
+    font-size: 20px;
+    padding-bottom: 10px;
+    transition: 3s;
+    opacity: 0;
+}
+
+.Hotel-overlay:hover h3 {
+    opacity: 1;
+}
+
+.overlay-content a {
+    display: inline-block;
+    font-size: 25px;
+    background-color: blue;
+    width: 40px;
+    height: 40px;
+    opacity: 0;
+    transition: 5s;
+}
+
+.Hotel-overlay:hover a {
+    opacity: 1;
+}
+
+.overlay-content a i {
+    font-size: 20px;
+    line-height: 40px;
+    color: black;
+
+}
+
+/* ////////////////////////////////////////////// */
+/* offer */
+
+.offer {
+    height: 100vh;
+}
+
+.offer h2 {
+    padding-top: 50px;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 35px;
+}
+
+.offer .underline {
+    width: 55px;
+    height: 5px;
+    background-color: blue;
+    margin: auto;
+    margin-bottom: 50px;
+    margin-top: 8px;
+
+}
+
+.offer-item {
+    float: left;
+    width: 30%;
+    border: 2px solid gray;
+    margin-top: 3%;
+    border-radius: 30px;
+    height: 220px;
+    position: relative;
+
+}
+
+.offer-item i {
+    position: absolute;
+    left: 15px;
+    top: 25px;
+    font-size: 35px;
+    color: #6195ff;
+}
+
+.offer-item h3 {
+    padding-left: 80px;
+    padding-top: 25px;
+    font-size: 25px;
+}
+
+.offer-item p {
+    padding-left: 80px;
+    padding-top: 15px;
+    color: rgb(143, 140, 140);
+}
+
+.offer-item::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color: black;
+    opacity: 0;
+    transition: 1s;
+    visibility: 0;
+    border-radius: 30px;
+
+}
+
+.offer-item:hover::after {
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    z-index: -1;
+    visibility: 1;
+}
+
+.offer-item:hover {
+    color: white;
+    transition: 1s;
+}
+
+/* ////////////////////////////////////////////////// */
+/* choose */
+.choose {
+    height: 100vh;
+}
+
+.choose-item {
+    width: 50%;
+    float: left;
+}
+
+.choose-item h2 {
+    font-size: 50px;
+    margin-top: 70px;
+}
+
+.choose-item .underline {
+    width: 55px;
+    height: 5px;
+    background-color: blue;
+    margin-right: 580px;
+}
+
+.choose-item p {
+    margin-top: 50px;
+    font-size: 21px;
+    color: grey;
+}
+
+.choose-item ul {
+    margin-top: 30px;
+    color: gray;
+
+}
+
+.choose-item ul li {
+    margin-top: 15px;
+    list-style: none;
+    font-size: 18px;
+
+}
+
+.choose-item ul li i {
+    color: #6195ff;
+}
+
+.choose-item img {
+    width: 100%;
+    height: 70%;
+    margin-top: 70px;
+}
+
+.choose-item .points {
+    text-align: center;
+}
+
+.choose-item .points li {
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    background-color: #a8a8a8;
+    margin: 0 10px;
+    border-radius: 50%;
+    list-style: none;
+}
+
+.choose-item .points li:hover {
+    background-color: #6195ff;
+}
+
+.choose-item .points .active {
+    background-color: #6195ff;
+}
+
+/* ///////////////////////////////////////////////// */
+/* numbers */
+
+.numbers {
+    height: 50vh;
+    background-image: url(../images/ross-parmly-rf6ywHVkrlY-unsplash.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.number-item {
+    width: 25%;
+    float: left;
+    padding-top: 120px;
+    text-align: center;
+}
+
+.numbers .overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+}
+
+.number-item i {
+    color: #6195ff;
+    margin-bottom: 10px;
+    font-size: 35px;
+}
+
+.number-item h3 {
+    font-size: 35px;
+    color: white;
+}
+
+.number-item p {
+    font-size: 20px;
+    color: white;
+}
+
+/* //////////////////////////////////////////////////// */
+/* pricing table */
+
+.pricing {
+    height: 100vh;
+    background-color: #f7f1e3;
+
+}
+
+.pricing h2 {
+    padding-top: 115px;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 35px;
+
+}
+
+.underline {
+    width: 55px;
+    height: 5px;
+    background-color: blue;
+    margin: auto;
+    margin-bottom: 80px;
+    margin-top: 8px;
+
+}
+
+.price-item {
+    width: 30%;
+    float: left;
+    text-align: center;
+    border: 2px solid black;
+    height: 350px;
+    border-radius: 30px;
+    position: relative;
+
+}
+
+.price-item::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color: black;
+    opacity: 0;
+    transition: 0.5s;
+    visibility: 0;
+    border-radius: 30px;
+
+}
+
+.price-item:hover::after {
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    visibility: 1;
+
+}
+
+.price-item:hover {
+    color: rgb(229, 44, 44);
+    transition: 0.5s;
+}
+
+.price-item .basic-price {
+    padding-top: 35px;
+    font-size: 19px;
+    color: #a8a8a8;
+}
+
+.circle {
+    height: 100px;
+    width: 100px;
+    border: 2px solid #6195ff;
+    border-radius: 50%;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 10px;
+    padding-top: 6px;
+
+}
+
+.circle h3 {
+    font-size: 50px;
+}
+
+.circle p {
+    font-size: 20px;
+}
+
+.price-item ul {
+    list-style: none;
+    padding-top: 5px;
+}
+
+.price-item ul li {
+    padding-top: 8px;
+    color: #a8a8a8;
+    font-size: 19px;
+}
+
+.price-item button {
+    border: 2px solid #6195ff;
+    margin: auto;
+    padding: 4px;
+    background-color: none;
+    display: block;
+    width: 150px;
+    height: 30px;
+    font-size: 13px;
+    margin-top: 17px;
+    border-radius: 15px;
+
+}
+
+/* ///////////////////////////////// */
+/* designe */
+.design {
+    height: 50vh;
+    background-image: url(../images/z-TrhLCn1abMU-unsplash.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.designe-item {
+    float: left;
+    width: 50%;
+    margin-top: 120px;
+    position: relative;
+    color: white;
+    padding-left: 75px;
+}
+
+.designe-item img {
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.designe-item h3 {
+    padding-left: 83px;
+    padding-top: 15px;
+
+}
+
+.designe-item .Traveler1 {
+    padding-left: 83px;
+    color: #6195ff;
+    text-transform: capitalize;
+
+}
+
+.designe-item .Traveler2 {
+    padding-top: 30px;
+    text-transform: capitalize;
+}
+
+/* /////////////////////////////////////////////////////////////// */
+/* team */
+.team {
+    height: 90vh;
+}
+
+.team-header {
+    padding-top: 115px;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 24px;
+}
+
+.team-item {
+    width: 30%;
+    float: left;
+    text-align: center;
+    background-color: #a8a8a8;
+    padding: 18px 14px;
+    position: relative;
+}
+
+.team-img {
+    width: 90%;
+    margin: auto;
+    position: relative;
+}
+
+.team-img img {
+    width: 100%;
+}
+
+.team-info {
+    padding-bottom: 15px;
+}
+
+.team-info {
+    font-size: 18px;
+}
+
+.team-info-title {
+    padding-bottom: 5px;
+}
+
+.team-item::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color: black;
+    opacity: 0;
+    transition: 0.5s;
+
+
+
+}
+
+.team-item:hover::after {
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+
+
+}
+
+.team-item:hover .team-info-title {
+    color: white;
+    transition: 0.5s;
+}
+
+.team-item:hover .team-info-text {
+    color: blue;
+}
+
+.team-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: .5s;
+}
+
+.team-item:hover .team-overlay {
+    opacity: 1;
+}
+
+.team-overlay a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-color: #6195ff;
+    color: white;
+    margin-left: auto;
+}
+
+.team-overlay a i {
+    line-height: 40px;
+    font-size: 20px;
+}
+
+/* /////////////////////////////////////////////// */
+/* Activities */
+.Activities {
+    height: 110vh;
+    background-color: floralwhite;
+}
+
+.Activities h2 {
+    padding-top: 115px;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 35px;
+}
+
+.Activities .underline {
+    width: 55px;
+    height: 5px;
+    background-color: blue;
+    margin: auto;
+    margin-bottom: 80px;
+    margin-top: 8px;
+}
+
+.Activities-items {
+    width: 30%;
+    float: left;
+    background-color: #fff;
+    position: relative;
+}
+
+.Activities-items-img {
+    width: 100%;
+}
+
+.Activities-items-img img {
+    width: 70%;
+    margin-left: 25px;
+    height: 300px;
+}
+
+.Activities-list {
+    padding-top: 30px;
+    padding-bottom: 20px;
+    list-style: none;
+
+}
+
+.Activities-list li {
+    display: inline-block;
+    font-size: 14px;
+    padding-right: 8px;
+}
+
+.Activities-list li i {
+    color: #6195ff;
+}
+
+.Activities-items h3 {
+    padding-bottom: 20px;
+}
+
+.Activities-items p {
+    padding-bottom: 20px;
+    color: darkgrey;
+}
+
+.Activities-items a {
+    text-decoration: none;
+    color: #0887f7;
+}
+
+.Activities-items::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color: black;
+    transition: 1s;
+    opacity: 0;
+}
+
+.Activities-items:hover:after {
+    opacity: 0.4;
+    height: 100%;
+    width: 100%;
+}
+
+/* ////////////////////////////////////// */
+/* footer */
+.footer {
+    height: 45vh;
+    background-color: #4c4d52;
+    text-align: center;
+    padding: 60px 0;
+}
+
+.footer img {
+    width: 170px;
+    height: 80px;
+}
+
+.footer-links {
+    list-style: none;
+    margin: 23px 0;
+}
+
+.footer-links li {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #6195ff;
+    position: relative;
+    z-index: 1;
+
+}
+
+.footer-links li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    line-height: 50px;
+    padding-top: 15px;
+    font-size: 23px;
+}
+
+.footer-links li:after {
+    content: "";
+    position: absolute;
+    opacity: 0;
+    transition: .3s;
+    background-color: #0954ec;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0%;
+    bottom: 0;
+}
+
+.footer-links li:hover::after {
+    opacity: .7;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    border-radius: 50%;
+}
+
+.footer p {
+    color: #999;
+    font-size: 13px;
+    text-transform: uppercase;
+}
